@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150828152559) do
+=======
+ActiveRecord::Schema.define(version: 20150828155235) do
+
+  create_table "doctors", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "age"
+    t.integer  "experience_in_years"
+    t.text     "Bio"
+    t.string   "Specialty"
+    t.string   "GP?"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+  end
+>>>>>>> feature/doctor_management
 
   create_table "patients", force: :cascade do |t|
     t.string   "name"
